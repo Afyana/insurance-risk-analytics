@@ -1,0 +1,9 @@
+stages:
+  prepare:
+    cmd: python src/data_loader.py
+    deps:
+      - data/insurance_data.csv
+      - src/data_loader.py
+    outs:
+      - data/insurance_data_processed.csv
+ 
